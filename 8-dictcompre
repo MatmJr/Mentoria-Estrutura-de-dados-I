@@ -1,7 +1,15 @@
-new_list = [['a',1], ['b',2]]
+new_list = [["a", 1], ["b", 2]]
 
 # crie um dicionário usando a lista de listas acima:
+new_list = [["a", 1], ["b", 2]]
+dicio = {}
+for item in new_list:
+    dicio[item[0]] = item[1]
 
+print(dicio)
 
 
 # jeito supimpa
+dicio = {item1: item2 for item1, item2 in new_list}
+
+print(dicio)
